@@ -6,9 +6,9 @@ Requirements:
 
 Write a program that generates a random number and asks the user to guess what the number is.
 
-If the user’s guess is higher than the random number, the program should display “Too high, try again.”
+If the userâ€™s guess is higher than the random number, the program should display â€œToo high, try again.â€
 
-If the user’s guess is lower than the random number, the program should display “Too low, try again.”
+If the userâ€™s guess is lower than the random number, the program should display â€œToo low, try again.â€
 
 The program should use a loop that repeats until the user correctly guesses the random number.
 
@@ -37,6 +37,7 @@ bool checkGuess(int guess, int randomNumber) {
     }
     else if (guess < randomNumber) {
         cout << "Too low, try again." << endl;
+        return false;
     }
     else {
         cout << "Congratulations! You guessed the correct number: " << randomNumber << endl;
